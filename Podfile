@@ -11,4 +11,3 @@ pod 'SVProgressHUD-0.8.1', '~> 0.8'
 pod 'SDWebImage', '~> 3.7.5'
 
 
-pod 'Google-Mobile-Ads-SDK'
