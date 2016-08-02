@@ -16,6 +16,8 @@
 		0DD88BEA1D4E3DE50058A203 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DD88BE81D4E3DE50058A203 /* LaunchScreen.storyboard */; };
 		0DD88BF51D4E3DE50058A203 /* LYSBmobTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DD88BF41D4E3DE50058A203 /* LYSBmobTests.m */; };
 		0DD88C001D4E3DE50058A203 /* LYSBmobUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DD88BFF1D4E3DE50058A203 /* LYSBmobUITests.m */; };
+		0DE6671C1D50154B00A43B8E /* LYSBmobServiceDB.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DE6671B1D50154B00A43B8E /* LYSBmobServiceDB.m */; };
+		0DE667231D501B4C00A43B8E /* NSString+LYSPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DE667221D501B4C00A43B8E /* NSString+LYSPath.m */; };
 		9C7E081F4EBC2301C2188725 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B950FB75FB768A02B7B1ED1E /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -55,6 +57,10 @@
 		0DD88BFB1D4E3DE50058A203 /* LYSBmobUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LYSBmobUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DD88BFF1D4E3DE50058A203 /* LYSBmobUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYSBmobUITests.m; sourceTree = "<group>"; };
 		0DD88C011D4E3DE50058A203 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0DE6671A1D50154B00A43B8E /* LYSBmobServiceDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYSBmobServiceDB.h; sourceTree = "<group>"; };
+		0DE6671B1D50154B00A43B8E /* LYSBmobServiceDB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYSBmobServiceDB.m; sourceTree = "<group>"; };
+		0DE667211D501B4C00A43B8E /* NSString+LYSPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+LYSPath.h"; sourceTree = "<group>"; };
+		0DE667221D501B4C00A43B8E /* NSString+LYSPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+LYSPath.m"; sourceTree = "<group>"; };
 		1E08BDD8FA69D5D19393829D /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		525CB0ADA221E7EA4FE931A1 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		B950FB75FB768A02B7B1ED1E /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -91,6 +97,8 @@
 			children = (
 				0DBA80021D4E3F4500215BE5 /* LYSBmobService.h */,
 				0DBA80031D4E3F4500215BE5 /* LYSBmobService.m */,
+				0DE6671A1D50154B00A43B8E /* LYSBmobServiceDB.h */,
+				0DE6671B1D50154B00A43B8E /* LYSBmobServiceDB.m */,
 			);
 			path = LYSBmobService;
 			sourceTree = "<group>";
@@ -120,6 +128,7 @@
 		0DD88BD91D4E3DE50058A203 /* LYSBmob */ = {
 			isa = PBXGroup;
 			children = (
+				0DE6671D1D501AAB00A43B8E /* LYSCategories */,
 				0DBA80011D4E3F3100215BE5 /* LYSBmobService */,
 				0DD88BDD1D4E3DE50058A203 /* AppDelegate.h */,
 				0DD88BDE1D4E3DE50058A203 /* AppDelegate.m */,
@@ -158,6 +167,31 @@
 				0DD88C011D4E3DE50058A203 /* Info.plist */,
 			);
 			path = LYSBmobUITests;
+			sourceTree = "<group>";
+		};
+		0DE6671D1D501AAB00A43B8E /* LYSCategories */ = {
+			isa = PBXGroup;
+			children = (
+				0DE6671E1D501AD400A43B8E /* Foundation */,
+			);
+			path = LYSCategories;
+			sourceTree = "<group>";
+		};
+		0DE6671E1D501AD400A43B8E /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				0DE667201D501B3300A43B8E /* NSString */,
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
+		0DE667201D501B3300A43B8E /* NSString */ = {
+			isa = PBXGroup;
+			children = (
+				0DE667211D501B4C00A43B8E /* NSString+LYSPath.h */,
+				0DE667221D501B4C00A43B8E /* NSString+LYSPath.m */,
+			);
+			path = NSString;
 			sourceTree = "<group>";
 		};
 		292F692A7B41C2C32D908965 /* Frameworks */ = {
@@ -359,7 +393,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				0DBA80041D4E3F4500215BE5 /* LYSBmobService.m in Sources */,
+				0DE6671C1D50154B00A43B8E /* LYSBmobServiceDB.m in Sources */,
 				0DD88BE21D4E3DE50058A203 /* ViewController.m in Sources */,
+				0DE667231D501B4C00A43B8E /* NSString+LYSPath.m in Sources */,
 				0DD88BDF1D4E3DE50058A203 /* AppDelegate.m in Sources */,
 				0DD88BDC1D4E3DE50058A203 /* main.m in Sources */,
 			);

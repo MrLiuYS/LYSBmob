@@ -4,6 +4,9 @@ PODS:
     - FMDB/standard (= 2.6.2)
   - FMDB/standard (2.6.2)
   - IQKeyboardManager (4.0.3)
+  - JSPatch (1.0):
+    - JSPatch/Core (= 1.0)
+  - JSPatch/Core (1.0)
   - MJRefresh (3.1.8)
   - SDWebImage (3.7.6):
     - SDWebImage/Core (= 3.7.6)
@@ -16,6 +19,7 @@ DEPENDENCIES:
   - BmobSDK (~> 1.6.6)
   - FMDB (~> 2.6)
   - IQKeyboardManager (~> 4.0.0)
+  - JSPatch (~> 1.0)
   - MJRefresh (~> 3.1.0)
   - SDWebImage (~> 3.7.5)
   - SVProgressHUD-0.8.1 (~> 0.8)
@@ -26,6 +30,7 @@ SPEC CHECKSUMS:
   BmobSDK: 448108f71e28947d0752cd81e242bb685a3ef6ca
   FMDB: 854a0341b4726e53276f2a8996f06f1b80f9259a
   IQKeyboardManager: be9695ffc5a52077deb4847608f338771022d6d1
+  JSPatch: c689ea4dde17441f2f4a95d40dfedb8900c20099
   MJRefresh: d226bbe0b1ec398f426ba1dc99319b4e51182e19
   SDWebImage: c325cf02c30337336b95beff20a13df489ec0ec9
   SVProgressHUD-0.8.1: ee9e6e58b5b5ffaf3f1a62c2dc409763470df143

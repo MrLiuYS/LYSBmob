@@ -10,5 +10,6 @@ pod 'UMengAnalyticsSDK', '~> 3.6.7.0'
 pod 'SVProgressHUD-0.8.1', '~> 0.8'
 pod 'SDWebImage', '~> 3.7.5'
 
+pod 'JSPatch', '~> 1.0'
 
 #pod 'Google-Mobile-Ads-SDK'
