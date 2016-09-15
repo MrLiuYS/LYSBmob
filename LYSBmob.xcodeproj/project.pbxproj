@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D0775E41D8AF2050053A33B /* LYSHtmlService.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D0775E31D8AF2050053A33B /* LYSHtmlService.m */; };
 		0DBA80041D4E3F4500215BE5 /* LYSBmobService.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DBA80031D4E3F4500215BE5 /* LYSBmobService.m */; };
 		0DD88BDC1D4E3DE50058A203 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DD88BDB1D4E3DE50058A203 /* main.m */; };
 		0DD88BDF1D4E3DE50058A203 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DD88BDE1D4E3DE50058A203 /* AppDelegate.m */; };
@@ -39,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0D0775E21D8AF2050053A33B /* LYSHtmlService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYSHtmlService.h; sourceTree = "<group>"; };
+		0D0775E31D8AF2050053A33B /* LYSHtmlService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYSHtmlService.m; sourceTree = "<group>"; };
 		0DBA80021D4E3F4500215BE5 /* LYSBmobService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYSBmobService.h; sourceTree = "<group>"; };
 		0DBA80031D4E3F4500215BE5 /* LYSBmobService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYSBmobService.m; sourceTree = "<group>"; };
 		0DD88BD71D4E3DE50058A203 /* LYSBmob.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LYSBmob.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -92,6 +95,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0D0775E11D8AF1EC0053A33B /* LYSHtmlService */ = {
+			isa = PBXGroup;
+			children = (
+				0D0775E21D8AF2050053A33B /* LYSHtmlService.h */,
+				0D0775E31D8AF2050053A33B /* LYSHtmlService.m */,
+			);
+			path = LYSHtmlService;
+			sourceTree = "<group>";
+		};
 		0DBA80011D4E3F3100215BE5 /* LYSBmobService */ = {
 			isa = PBXGroup;
 			children = (
@@ -130,6 +142,7 @@
 			children = (
 				0DE6671D1D501AAB00A43B8E /* LYSCategories */,
 				0DBA80011D4E3F3100215BE5 /* LYSBmobService */,
+				0D0775E11D8AF1EC0053A33B /* LYSHtmlService */,
 				0DD88BDD1D4E3DE50058A203 /* AppDelegate.h */,
 				0DD88BDE1D4E3DE50058A203 /* AppDelegate.m */,
 				0DD88BE01D4E3DE50058A203 /* ViewController.h */,
@@ -394,6 +407,7 @@
 			files = (
 				0DBA80041D4E3F4500215BE5 /* LYSBmobService.m in Sources */,
 				0DE6671C1D50154B00A43B8E /* LYSBmobServiceDB.m in Sources */,
+				0D0775E41D8AF2050053A33B /* LYSHtmlService.m in Sources */,
 				0DD88BE21D4E3DE50058A203 /* ViewController.m in Sources */,
 				0DE667231D501B4C00A43B8E /* NSString+LYSPath.m in Sources */,
 				0DD88BDF1D4E3DE50058A203 /* AppDelegate.m in Sources */,
