@@ -17,4 +17,4 @@ pod 'JSPatch', '~> 1.0'
 
 
 pod 'AFNetworking', '~> 2.5.4'
-pod 'GDataXML-HTML', '~> 1.2.0'
+pod 'GDataXML-HTML', '~> 1.3.0'

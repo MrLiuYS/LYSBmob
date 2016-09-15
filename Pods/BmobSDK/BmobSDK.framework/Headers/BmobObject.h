@@ -62,7 +62,7 @@
  *
  *  @return BmobObject对象
  */
-+(instancetype)objectWithoutDatatWithClassName:(NSString*)className objectId:(NSString *)objectId;
++(instancetype)objectWithoutDataWithClassName:(NSString*)className objectId:(NSString *)objectId;
 
 /**
  *	通过对象名称（类似数据库表名）初始化BmobObject对象
@@ -241,9 +241,5 @@
  *	@param	block	返回删除的结果是成功还是失败
  */
 -(void)deleteInBackgroundWithBlock:(BmobBooleanResultBlock)block;
-
-
-- (BOOL)isEqual:(BmobObject*)object;
-- (NSString*)description;
 
 @end
