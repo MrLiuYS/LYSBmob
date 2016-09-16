@@ -19,6 +19,7 @@
 		0DD88C001D4E3DE50058A203 /* LYSBmobUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DD88BFF1D4E3DE50058A203 /* LYSBmobUITests.m */; };
 		0DE6671C1D50154B00A43B8E /* LYSBmobServiceDB.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DE6671B1D50154B00A43B8E /* LYSBmobServiceDB.m */; };
 		0DE667231D501B4C00A43B8E /* NSString+LYSPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DE667221D501B4C00A43B8E /* NSString+LYSPath.m */; };
+		0DFBB5F01D8C366000383135 /* LYSHtmlService+JZW.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DFBB5EF1D8C366000383135 /* LYSHtmlService+JZW.m */; };
 		9C7E081F4EBC2301C2188725 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B950FB75FB768A02B7B1ED1E /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -64,6 +65,9 @@
 		0DE6671B1D50154B00A43B8E /* LYSBmobServiceDB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYSBmobServiceDB.m; sourceTree = "<group>"; };
 		0DE667211D501B4C00A43B8E /* NSString+LYSPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+LYSPath.h"; sourceTree = "<group>"; };
 		0DE667221D501B4C00A43B8E /* NSString+LYSPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+LYSPath.m"; sourceTree = "<group>"; };
+		0DFBB5EE1D8C366000383135 /* LYSHtmlService+JZW.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "LYSHtmlService+JZW.h"; sourceTree = "<group>"; };
+		0DFBB5EF1D8C366000383135 /* LYSHtmlService+JZW.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "LYSHtmlService+JZW.m"; sourceTree = "<group>"; };
+		0DFBB5F11D8C372800383135 /* LYSHtmlConfige.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYSHtmlConfige.h; sourceTree = "<group>"; };
 		1E08BDD8FA69D5D19393829D /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		525CB0ADA221E7EA4FE931A1 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		B950FB75FB768A02B7B1ED1E /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -98,8 +102,11 @@
 		0D0775E11D8AF1EC0053A33B /* LYSHtmlService */ = {
 			isa = PBXGroup;
 			children = (
+				0DFBB5F11D8C372800383135 /* LYSHtmlConfige.h */,
 				0D0775E21D8AF2050053A33B /* LYSHtmlService.h */,
 				0D0775E31D8AF2050053A33B /* LYSHtmlService.m */,
+				0DFBB5EE1D8C366000383135 /* LYSHtmlService+JZW.h */,
+				0DFBB5EF1D8C366000383135 /* LYSHtmlService+JZW.m */,
 			);
 			path = LYSHtmlService;
 			sourceTree = "<group>";
@@ -408,6 +415,7 @@
 				0DBA80041D4E3F4500215BE5 /* LYSBmobService.m in Sources */,
 				0DE6671C1D50154B00A43B8E /* LYSBmobServiceDB.m in Sources */,
 				0D0775E41D8AF2050053A33B /* LYSHtmlService.m in Sources */,
+				0DFBB5F01D8C366000383135 /* LYSHtmlService+JZW.m in Sources */,
 				0DD88BE21D4E3DE50058A203 /* ViewController.m in Sources */,
 				0DE667231D501B4C00A43B8E /* NSString+LYSPath.m in Sources */,
 				0DD88BDF1D4E3DE50058A203 /* AppDelegate.m in Sources */,

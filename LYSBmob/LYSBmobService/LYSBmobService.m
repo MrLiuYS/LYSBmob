@@ -13,9 +13,22 @@
 
 @implementation LYSBmobService
 
++ (LYSBmobService *)sharedManager
+{
+    static LYSBmobService *sharedInstance = nil;
+    static dispatch_once_t predicate;
+    dispatch_once(&predicate, ^{
+        if (!sharedInstance) {
+            sharedInstance = [[LYSBmobService alloc]init];
+        }
+    });
+    return sharedInstance;
+}
+
 - (void)setLys_BmobAppID:(NSString *)lys_BmobAppID {
     
     _lys_BmobAppID = lys_BmobAppID;
+    
     [Bmob registerWithAppKey:lys_BmobAppID];
     
     NSLog(@"文档路径:%@",[NSString lys_documentsPath]);

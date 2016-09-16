@@ -18,9 +18,12 @@
 //static NSString *const kBmobTable             = @"kBmobTable";
 static NSString *const kBmobTableSyncIden             = @"kBmobTableSyncIden";
 
+#define GLYSBmob [LYSBmobService sharedManager]
 
 
 @interface LYSBmobService : NSObject
+
++ (LYSBmobService *)sharedManager;
 
 /**
  *  设置bmob id , 并注册
