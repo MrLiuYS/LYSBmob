@@ -32,6 +32,10 @@ static NSString *const kBmobTableSyncIden             = @"kBmobTableSyncIden";
 
 #pragma mark - 增
 
+- (void)lys_AddTableName:(NSString *)tableName
+         Lessthan50Array:(NSArray *)array
+             resultBlock:(void (^)(BOOL isSuccessful, NSError *error))resultBlock;
+
 
 #pragma mark - 删
 

@@ -39,6 +39,37 @@
 }
 
 
+#pragma mark - 增
+
+- (void)lys_AddTableName:(NSString *)tableName
+         Lessthan50Array:(NSArray *)array
+             resultBlock:(void (^)(BOOL isSuccessful, NSError *error))resultBlock {
+    
+    if (array && array.count > 50) {
+        
+        resultBlock(NO , nil);
+    }
+    
+    BmobObjectsBatch *batch = [[BmobObjectsBatch alloc] init] ;
+    
+    
+    for (NSDictionary * dic in array) {
+        
+        [batch saveBmobObjectWithClassName:tableName parameters:dic];
+        
+        
+    }
+    
+    
+    [batch batchObjectsInBackgroundWithResultBlock:^(BOOL isSuccessful, NSError *error) {
+        
+        resultBlock(isSuccessful , error);
+        
+    }];
+    
+    
+}
+
 
 
 #pragma mark - 查
