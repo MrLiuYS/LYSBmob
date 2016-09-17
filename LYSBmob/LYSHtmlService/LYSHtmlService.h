@@ -12,13 +12,7 @@
 #import <GDataXMLNode.h>
 
 
-typedef enum
-{
-    LYSHtmlServiceType_JZW = 0,
-    
-    LYSHtmlServiceType_MAX
-}
-LYSHtmlServiceType;
+
 
 
 #define GLYSHtml [LYSHtmlService sharedManager]

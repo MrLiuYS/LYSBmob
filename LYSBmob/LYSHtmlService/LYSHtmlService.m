@@ -45,9 +45,6 @@
                parameters:nil
                   success:^(NSURLSessionDataTask *task, id responseObject) {
                       
-                      
-                      
-                      
                       responseBlock(task, responseObject, nil);
                       
                   } failure:^(NSURLSessionDataTask *task, NSError *error) {

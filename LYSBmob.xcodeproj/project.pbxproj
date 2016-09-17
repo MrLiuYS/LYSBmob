@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0D0775E41D8AF2050053A33B /* LYSHtmlService.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D0775E31D8AF2050053A33B /* LYSHtmlService.m */; };
+		0D37B9BE1D8D1B48004CDF92 /* LYSHtmlService+MINGYAN.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D37B9BD1D8D1B48004CDF92 /* LYSHtmlService+MINGYAN.m */; };
 		0DBA80041D4E3F4500215BE5 /* LYSBmobService.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DBA80031D4E3F4500215BE5 /* LYSBmobService.m */; };
 		0DD88BDC1D4E3DE50058A203 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DD88BDB1D4E3DE50058A203 /* main.m */; };
 		0DD88BDF1D4E3DE50058A203 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DD88BDE1D4E3DE50058A203 /* AppDelegate.m */; };
@@ -43,6 +44,8 @@
 /* Begin PBXFileReference section */
 		0D0775E21D8AF2050053A33B /* LYSHtmlService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYSHtmlService.h; sourceTree = "<group>"; };
 		0D0775E31D8AF2050053A33B /* LYSHtmlService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYSHtmlService.m; sourceTree = "<group>"; };
+		0D37B9BC1D8D1B48004CDF92 /* LYSHtmlService+MINGYAN.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "LYSHtmlService+MINGYAN.h"; sourceTree = "<group>"; };
+		0D37B9BD1D8D1B48004CDF92 /* LYSHtmlService+MINGYAN.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "LYSHtmlService+MINGYAN.m"; sourceTree = "<group>"; };
 		0DBA80021D4E3F4500215BE5 /* LYSBmobService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYSBmobService.h; sourceTree = "<group>"; };
 		0DBA80031D4E3F4500215BE5 /* LYSBmobService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYSBmobService.m; sourceTree = "<group>"; };
 		0DD88BD71D4E3DE50058A203 /* LYSBmob.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LYSBmob.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -107,6 +110,8 @@
 				0D0775E31D8AF2050053A33B /* LYSHtmlService.m */,
 				0DFBB5EE1D8C366000383135 /* LYSHtmlService+JZW.h */,
 				0DFBB5EF1D8C366000383135 /* LYSHtmlService+JZW.m */,
+				0D37B9BC1D8D1B48004CDF92 /* LYSHtmlService+MINGYAN.h */,
+				0D37B9BD1D8D1B48004CDF92 /* LYSHtmlService+MINGYAN.m */,
 			);
 			path = LYSHtmlService;
 			sourceTree = "<group>";
@@ -414,6 +419,7 @@
 			files = (
 				0DBA80041D4E3F4500215BE5 /* LYSBmobService.m in Sources */,
 				0DE6671C1D50154B00A43B8E /* LYSBmobServiceDB.m in Sources */,
+				0D37B9BE1D8D1B48004CDF92 /* LYSHtmlService+MINGYAN.m in Sources */,
 				0D0775E41D8AF2050053A33B /* LYSHtmlService.m in Sources */,
 				0DFBB5F01D8C366000383135 /* LYSHtmlService+JZW.m in Sources */,
 				0DD88BE21D4E3DE50058A203 /* ViewController.m in Sources */,

@@ -126,6 +126,10 @@
             cell.textLabel.text = @"jzw";
             break;
             
+        case LYSHtmlServiceType_MINGYAN:
+            cell.textLabel.text = @"mingyan";
+            break;
+            
         default:
             break;
     }
@@ -147,6 +151,20 @@
             _page_jzw = 0;
             
             [self htmlService_jzw];
+            
+        }
+            break;
+            
+        case LYSHtmlServiceType_MINGYAN:
+        {
+            
+            GLYSHtml.htmlUrlString = @"";
+            
+            GLYSBmob.lys_BmobAppID = @"";
+            
+            _page_jzw = 0;
+            
+            [self htmlService_mingyan];
             
         }
             break;
@@ -204,6 +222,60 @@
                                        
                                        
                                    }];
+    
+}
+
+
+
+- (void)htmlService_mingyan {
+    
+    [SVProgressHUD showWithStatus:[NSString stringWithFormat:@"请求数据\npanasonic.asp?page=%d",_page_jzw]];
+    
+    [LYSHtmlService htmlService_MINGYAN_GetUrlString:[NSString stringWithFormat:@"panasonic.asp?page=%d",_page_jzw]
+                                       responseBlock:^(NSURLSessionDataTask *task, NSMutableArray<NSDictionary *> *responseArray, NSError *error)
+     {
+         
+         if (responseArray.count > 0) {
+             
+             dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+                 
+                 
+                 dispatch_async(dispatch_get_main_queue(), ^{
+                     
+                     
+                     [SVProgressHUD showWithStatus:[NSString stringWithFormat:@"同步\npanasonic.asp?page=%d",_page_jzw]];
+                     
+                     [GLYSBmob lys_AddTableName:@"mingyan"
+                                Lessthan50Array:responseArray
+                                    resultBlock:^(BOOL isSuccessful, NSError *error) {
+                                        
+                                        [SVProgressHUD showSuccessWithStatus:[NSString stringWithFormat:@"同步成功\npanasonic.asp?page=%d",_page_jzw]];
+                                        
+                                        
+                                        if (isSuccessful) {
+                                            _page_jzw+=1;
+                                        }else {
+                                            NSLog(@"%@",error);
+                                        }
+                                        
+                                        [self performSelector:@selector(htmlService_mingyan)
+                                                   withObject:nil
+                                                   afterDelay:0.1];
+                                        
+                                        
+                                    }];
+                     
+                     
+                 });
+                 
+                 
+             });
+             
+             
+         }
+         
+         
+     }];
     
 }
 

@@ -12,6 +12,16 @@
 
 #import "LYSHtmlService.h"
 #import "LYSHtmlService+JZW.h"
+#import "LYSHtmlService+MINGYAN.h"
+
+
+typedef enum
+{
+    LYSHtmlServiceType_JZW = 0,
+    LYSHtmlServiceType_MINGYAN,
+    LYSHtmlServiceType_MAX
+}
+LYSHtmlServiceType;
 
 
 #endif /* LYSHtmlConfige_h */
